@@ -9,8 +9,8 @@
 #79 0,1,2,3 'left'
 #77-78 0,1,2,3,4 'right'
 #76 0,1,2,3,4,5 (arada kayıyıyor) 'Right Click'
-#74 0,1,2,3,4,5,6 'W'
-#72 0,1,2,3,4,5,6,7 'E'
+#74 0,1,2,3,4,5,6 'E'
+#72 0,1,2,3,4,5,6,7 'W'
 
 import numpy as np
 import pyaudio
