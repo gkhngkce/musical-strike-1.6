@@ -1,0 +1,7 @@
+pydirectinput
+pyautogui
+numpy
+pyaudio
+playsound
+keyboard
+wave
