@@ -27,6 +27,8 @@ DEVICE_INDEX=1 #input device index
 #global variables for toggle 'e' and 'w'
 isWToggled = False 
 isEToggled = False
+starttime=0
+endtime=0
 
 #note detection configuration variables
 NOTE_MIN = 72       # C4 // guitar 40
@@ -125,6 +127,7 @@ print("Getting stream from {}".format(p.get_device_info_by_index(DEVICE_INDEX).g
 
 # As long as we are getting data:
 while stream.is_active():
+    starttime=time.time()
     #Get stream to the buffer
     buf[:-FRAME_SIZE] = buf[FRAME_SIZE:]
     buf[-FRAME_SIZE:] = np.fromstring(stream.read(FRAME_SIZE), np.int16)
@@ -150,3 +153,5 @@ while stream.is_active():
             print('freq: {:7.2f} Hz     note: {:>3s} {:+.2f}  number:{} occurance:{}'.format(freq, note_name(n0), n-n0,n0,NOTE_COUNTS[n0]))
             noteCounter(n0)
             mapping(n0)
+            endtime=time.time()
+            print("Exectime: ",endtime-starttime)
