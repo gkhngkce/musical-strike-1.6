@@ -1,11 +1,9 @@
-
-
-#pip install playsound
-
 import playsound
 import keyboard
 
+#This is expermental place for testing purposes to play notes with keys without a flute
 
+#This code is not completed ! So don't use it for now. Wait for next updates :)
 
 while True: 
     if keyboard.is_pressed('8'):
