@@ -8,7 +8,7 @@
 #81 0,1,2 'down'
 #79,80 0,1,2,3 'left'
 #77-78 0,1,2,3,4 'right'
-#76 0,1,2,3,4,5 (arada kayıyıyor) 'Right Click'
+#76 0,1,2,3,4,5 (bazen kayıyıyor) 'Right Click'
 #74 0,1,2,3,4,5,6 'E'
 #72 0,1,2,3,4,5,6,7 'W'
 
